@@ -46,6 +46,8 @@ class _PortraitScreenState extends State<PortraitScreen> {
                     " when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
                     "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                     " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop "
+                    " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop "
+                    " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop "
                     "publishing software like Aldus PageMaker including versions of Lorem Ipsum ",
                   ),
                 ),
@@ -68,8 +70,6 @@ class _PortraitScreenState extends State<PortraitScreen> {
                       ? MediaQuery.of(context).size.width ~/ 75
                       : widget.images.length,
                   itemBuilder: (context, index) {
-                    print(index == (MediaQuery.of(context).size.width ~/ 75) - 1);
-                    print(MediaQuery.of(context).size.width ~/ 75);
                     return index == (MediaQuery.of(context).size.width ~/ 75) - 1 &&
                             isItemsBiggerThanScreen &&
                             widget.images.length > (MediaQuery.of(context).size.width ~/ 75)

@@ -1,13 +1,13 @@
-import 'package:bti_training2/screens/landscape/landscape_screen.dart';
-import 'package:bti_training2/screens/portrait/portrait_screen.dart';
+import 'package:bti_training2/assignments/assignment1/screens/landscape/landscape_screen.dart';
+import 'package:bti_training2/assignments/assignment1/screens/portrait/portrait_screen.dart';
 import 'package:flutter/material.dart';
 
-class FirstExc extends StatefulWidget {
-  FirstExc({super.key});
+class FirstAssignment extends StatefulWidget {
+  FirstAssignment({super.key});
 
   @override
   State<StatefulWidget> createState() {
-    return FirstExcState();
+    return FirstAssignmentState();
   }
 
   final List<String> images = [
@@ -24,7 +24,7 @@ class FirstExc extends StatefulWidget {
   ];
 }
 
-class FirstExcState extends State<FirstExc> {
+class FirstAssignmentState extends State<FirstAssignment> {
   bool isFavourite = false;
   bool isItemsBiggerThanScreen = true;
   @override
