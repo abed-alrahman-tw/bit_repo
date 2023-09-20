@@ -61,7 +61,10 @@ class ProductWidget extends StatelessWidget {
                             (states) => Size(MediaQuery.sizeOf(context).width / 2 - 10, 35))),
                     onPressed: () {
                       cart.add(product);
-
+                      int categoryIndex = categories.indexWhere((element) => element.id == product.categoryId);
+                      int productIndex =
+                          categories[categoryIndex].products.indexWhere((element) => element.id == product.id);
+                      categories[categoryIndex].products.removeAt(productIndex);
                       func();
                     },
                     icon: const Icon(
